@@ -9,7 +9,7 @@
  * @copyright Copyright University of Maryland(c) 2022
  *
  */
-#include "../include/pid.cpp"
+#include "../include/pid.hpp"
 
 int main() {
   /// Instantiating PID Controller Object
