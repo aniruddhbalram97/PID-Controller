@@ -1,4 +1,3 @@
-
 /**
  * @file main.cpp
  * @author Aniruddh Balram(Driver)
@@ -11,7 +10,6 @@
  *
  */
 #include "pid.hpp"
-#include <iostream>
 
 int main() {
   /// Instantiating PID Controller Object
@@ -19,7 +17,6 @@ int main() {
   double changing_process_value = 10;
   /// Live computation of PID for 100 iterations
   for (int i = 0; i < 100; i++) {
-
     double increment = pid_instance.compute(changing_process_value, 0);
     std::cout << "The final value: " << changing_process_value
               << " & The increment: " << increment << std::endl;

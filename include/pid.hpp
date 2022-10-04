@@ -5,9 +5,9 @@
  * @brief PID Controller
  * @version 0.1
  * @date 2022-10-01
- * 
+ *
  * @copyright Copyright University of Maryland(c) 2022
- * 
+ *
  */
 #pragma once
 #include <iostream>
@@ -24,30 +24,23 @@
  * @param pre_error Error at the beginning
  * @param integral Variable to summed-up integral
  */
-class PID{
-    public:
-        PID(double _dt,
-        double _max,
-        double _min, 
-        double _kp,
-        double _kd,
-        double _ki);
-        double compute(double process_value, double set_point);
-        double getKP();
-        double getKD();
-        double getKI();
-        double CalculateCummulativeError(double cum_error);
-        double ErrorDerivativeCalculation(double error);
-        // ~PID();
-    private:
-        double kd;
-        double kp;
-        double ki;
-        double dt;
-        double min;
-        double max;
-        double pre_error;
-        double integral;
-    
+class PID {
+ public:
+  PID(double _dt, double _max, double _min, double _kp, double _kd, double _ki);
+  double compute(double process_value, double set_point);
+  double getKP();
+  double getKD();
+  double getKI();
+  double CalculateCummulativeError(double cum_error);
+  double ErrorDerivativeCalculation(double error);
+  // ~PID();
+ private:
+  double kd;
+  double kp;
+  double ki;
+  double dt;
+  double min;
+  double max;
+  double pre_error;
+  double integral;
 };
-
