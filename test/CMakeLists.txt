@@ -3,7 +3,7 @@ set(GTEST_SHUFFLE 1)
 add_executable(
     cpp-test
     main.cpp
-    ../app/pid.cpp
+    ../include/pid.cpp
     test.cpp
 )
 
