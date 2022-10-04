@@ -1,6 +1,9 @@
 ## Test-Driven-Development Authors (Part 1):
 Driver - Aniruddh Balram
 Navigator - Aneesh Chodisetty
+## Test-Driven-Development Authors (Part 2):
+Driver - Mayank Sharma
+Navigator - Koundinya Vinnakota
 
 ## Standard install via command-line
 ```
